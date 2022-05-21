@@ -1,0 +1,30 @@
+GET http://localhost:3000/players/
+
+###
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Srihari",
+  "jerseyNumber": 64,
+  "role": "Bowler"
+}
+
+###
+
+GET http://localhost:3000/players/11/
+
+###
+
+PUT http://localhost:3000/players/11/
+Content-Type: application/json
+
+{
+  "playerName": "Srihari Muppalla",
+  "jerseyNumber": 64,
+  "role": "All-Rounder"
+}
+
+###
+DELETE http://localhost:3000/players/12/
